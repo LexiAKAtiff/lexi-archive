@@ -1,0 +1,191 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  min-height: 100vh;
+}
+
+.backButton {
+  display: inline-block;
+  font-size: 18px;
+  color: #1A1A1A;
+  margin-bottom: 40px;
+  transition: transform 0.2s;
+  letter-spacing: 2px;
+}
+
+.backButton:hover {
+  transform: translateX(-5px);
+}
+
+.article {
+  background: white;
+  border: 3px solid #1A1A1A;
+  padding: 50px;
+  box-shadow: 8px 8px 0px rgba(26, 26, 26, 0.2);
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.date {
+  font-size: 18px;
+  color: #CC0000;
+  letter-spacing: 2px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background: #1A1A1A;
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 60px;
+  color: #1A1A1A;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  transform: skewY(-1deg);
+}
+
+.content {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  color: #1A1A1A;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.content ul, .content ol {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.content code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+}
+
+.content pre {
+  background: #1A1A1A;
+  color: #E8E4D8;
+  padding: 20px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  border-left: 4px solid #CC0000;
+}
+
+.content pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+.content blockquote {
+  border-left: 4px solid #CC0000;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #666;
+  font-style: italic;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+
+.content a {
+  color: #CC0000;
+  text-decoration: underline;
+}
+
+.content a:hover {
+  color: #1A1A1A;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .article {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content h3 {
+    font-size: 24px;
+  }
+}

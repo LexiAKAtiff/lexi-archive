@@ -1,0 +1,111 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  min-height: 100vh;
+}
+
+.backButton {
+  display: inline-block;
+  font-size: 18px;
+  color: #1A1A1A;
+  margin-bottom: 40px;
+  transition: transform 0.2s;
+  letter-spacing: 2px;
+}
+
+.backButton:hover {
+  transform: translateX(-5px);
+}
+
+.title {
+  font-size: 80px;
+  color: #1A1A1A;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transform: skewY(-2deg);
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #666;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.postsList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.postCard {
+  background: white;
+  border: 3px solid #1A1A1A;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 0px rgba(26, 26, 26, 0.2);
+  cursor: pointer;
+}
+
+.postCard:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px rgba(26, 26, 26, 0.3);
+}
+
+.postDate {
+  font-size: 16px;
+  color: #CC0000;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.postTitle {
+  font-size: 40px;
+  color: #1A1A1A;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.postExcerpt {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  font-size: 18px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .postTitle {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .postCard {
+    padding: 20px;
+  }
+}

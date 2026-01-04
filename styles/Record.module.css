@@ -1,0 +1,227 @@
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  min-height: 100vh;
+}
+
+.backButton {
+  display: inline-block;
+  font-size: 18px;
+  color: #1A1A1A;
+  margin-bottom: 40px;
+  transition: transform 0.2s;
+  letter-spacing: 2px;
+}
+
+.backButton:hover {
+  transform: translateX(-5px);
+}
+
+.article {
+  background: white;
+  border: 4px solid #1A1A1A;
+  border-left: 12px solid #CC0000;
+  padding: 60px;
+  box-shadow: 10px 10px 0px rgba(26, 26, 26, 0.2);
+  position: relative;
+}
+
+.recordBadge {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  background: #CC0000;
+  color: white;
+  padding: 8px 20px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #E8E4D8;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.date {
+  font-size: 20px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background: #1A1A1A;
+  color: white;
+  padding: 6px 16px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 64px;
+  color: #1A1A1A;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  transform: skewY(-1deg);
+}
+
+.content {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #2A2A2A;
+}
+
+.content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 46px;
+  color: #1A1A1A;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  border-left: 6px solid #CC0000;
+  text-transform: uppercase;
+}
+
+.content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 38px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  margin-bottom: 24px;
+}
+
+.content ul, .content ol {
+  margin-left: 35px;
+  margin-bottom: 24px;
+}
+
+.content li {
+  margin-bottom: 12px;
+}
+
+.content code {
+  background: #f5f5f5;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.content pre {
+  background: #1A1A1A;
+  color: #E8E4D8;
+  padding: 25px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+  border-left: 6px solid #CC0000;
+}
+
+.content pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border: none;
+}
+
+.content blockquote {
+  border-left: 6px solid #CC0000;
+  background: #f9f9f9;
+  padding: 20px 25px;
+  margin: 30px 0;
+  color: #555;
+  font-style: italic;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 0;
+  border: 3px solid #E8E4D8;
+}
+
+.content a {
+  color: #CC0000;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.content a:hover {
+  color: #1A1A1A;
+}
+
+.content hr {
+  border: none;
+  border-top: 3px solid #1A1A1A;
+  margin: 50px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .article {
+    padding: 35px 25px;
+  }
+
+  .recordBadge {
+    position: static;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  .title {
+    font-size: 42px;
+    letter-spacing: 3px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .content h1 {
+    font-size: 34px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content h3 {
+    font-size: 24px;
+  }
+}

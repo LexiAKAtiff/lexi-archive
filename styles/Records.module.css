@@ -1,0 +1,143 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  min-height: 100vh;
+}
+
+.backButton {
+  display: inline-block;
+  font-size: 18px;
+  color: #1A1A1A;
+  margin-bottom: 40px;
+  transition: transform 0.2s;
+  letter-spacing: 2px;
+}
+
+.backButton:hover {
+  transform: translateX(-5px);
+}
+
+.title {
+  font-size: 80px;
+  color: #1A1A1A;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transform: skewY(-2deg);
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #666;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.postsList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.postCard {
+  background: white;
+  border: 4px solid #1A1A1A;
+  padding: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0px rgba(26, 26, 26, 0.2);
+  cursor: pointer;
+  position: relative;
+}
+
+.postCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: #CC0000;
+}
+
+.postCard:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px rgba(26, 26, 26, 0.3);
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.postDate {
+  font-size: 18px;
+  color: #CC0000;
+  letter-spacing: 2px;
+}
+
+.recordBadge {
+  background: #1A1A1A;
+  color: white;
+  padding: 6px 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.postTitle {
+  font-size: 48px;
+  color: #1A1A1A;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.postExcerpt {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.readMore {
+  font-size: 18px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .postTitle {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .postCard {
+    padding: 25px;
+  }
+
+  .postHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
