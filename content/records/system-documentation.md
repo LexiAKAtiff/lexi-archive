@@ -1,6 +1,6 @@
 ---
 title: "LEXI ARCHIVE: System Documentation"
-date: "2025-01-23"
+date: "0000-00-00"
 tags: ["technical", "documentation"]
 excerpt: "Technical documentation of the LEXI ARCHIVE system architecture and design."
 ---
