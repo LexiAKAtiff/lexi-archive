@@ -7,7 +7,7 @@ export default function Record({ postData }) {
   return (
     <>
       <Head>
-        <title>{postData.title} - LEXI ARCHIVE</title>
+        <title>{`${postData.title} - LEXI ARCHIVE`}</title>
       </Head>
 
       <div className={styles.container}>
@@ -31,11 +31,16 @@ export default function Record({ postData }) {
 
           <h1 className={styles.title}>{postData.title}</h1>
 
-          <div 
+          <div
             className={styles.content}
-            dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           />
+
         </article>
+
+        <div className={styles.backToIndex}>
+          <Link href="/">← BACK TO RECORDS</Link>
+        </div>
       </div>
     </>
   );

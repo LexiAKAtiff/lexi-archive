@@ -182,6 +182,22 @@
   color: #1A1A1A;
 }
 
+.backToIndex {
+  margin-top: 40px;
+}
+
+.backToIndex a {
+  font-size: 18px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.backToIndex a:hover {
+  transform: translateX(-5px);
+}
+
 .content hr {
   border: none;
   border-top: 3px solid #1A1A1A;

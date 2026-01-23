@@ -1,85 +1,36 @@
 ---
-title: "2024 Annual Review"
-date: "2024-12-31"
-tags: ["review", "reflection"]
-excerpt: "A comprehensive review of 2024: achievements, learnings, and future directions."
+title: "2024年度总结"
+date: "2025-01-02"
+tags: ["回顾"]
+excerpt: "2024真是奇妙的一年"
 ---
 
-# 2024 Annual Review
+*从我的微博内容改编，有的东西涉及到其他人，不能讲就删掉了* 
 
-Official documentation of the year's progress, challenges overcome, and lessons learned.
+2024开年，我喜欢做点上大学的梦。有时候梦nus有时候梦港科大。 但当时的精神支柱可能是别的东西。出去租房住让我每天都能摸到手机，我感觉这让我太开心了。
+春天，三月底，和theo冷战了。我就知道这会发生，我每次都会和我的同桌闹得不愉快，就算是Theo。大概因为我是回避型。现在想起其实好像还是我错得更多。
+四月，我的生日，朋友的生日，成人礼。我和Theo好像和好了，我不知道她有没有原谅我。生日那天我去吃了Brustin，一个非常fancy的法餐厅，第二天发现月考年级第十。从此真正地转运了，我又连续考了三次年级前20。
+不过三诊考了一百多名。还好我当时已经很清楚高考纯随机游戏。考多少分和实力的联系其实没有那么大，50分的波动都是非常保守的估计。（对我来说。因为我的发挥受身体的影响非常大）ttc说i will not let anybody reduce my talent to luck…我会说luck plays a fucking significant part!
+所以三诊成绩一出来我就递交了港理工的材料。我没有很高的配得感，我没有感觉说只有xx学校才配得上我。但我无比相信自学，我知道就算去了阿尔伯塔我也能学好计算机。这带给我巨大的松弛感。
 
-## Overview
+对高三在校期间的印象已经不太深了。
+一想到高三，脑子里出现的画面是我穿着棒球服。在座位上伸懒腰，桌子上摆着我的草稿纸，on which were my scribbled nonsense poems. 书桌左上角堆着非常高的一摞书和卷子，我才不想收纳，因为我觉得它们都是乐色，they don't deserve it…我好像比前几年松弛了太多！
+最后5.31我去看了坂本龙一的音乐纪录片电影，拿到南洋理工的无条件offer，如此幸运。那段时间我每天用英文写一篇长长的随记，主要发表一些自我反思、社会问题锐评、音乐锐评。就算现在回看也觉得写得很好。
+最后我只是抱着给自己一个交代的心态去复习高考。高考前三天一直在天府人物艺术图书馆。
+零压力上考场了。
+高考成绩真的，让我泪目。英语物理是我最爱也最引以为豪的两门，真的没有辜负我（平时也会因为莫名其妙的原因拿不下这么高的分）。数学生物我本来就不怎么热忱，考成这样也无所谓。化学正常发挥，语文暴力超常发挥，也真的是对得起我高中读的这么多闲书。
 
-2024 marked a significant year of growth and transformation across multiple domains. This record documents key milestones and strategic insights for future reference.
+上半年就这样，都是废话。一切都淡淡的。我也不励志，也不是摆狗。
+读点书、听点播客、（我真的听了好多播客）、听点音乐、跟朋友聊点天就学下去了。
+我不怎么喜欢那些老师，但再也没有过听着他们讲话就焦虑躯体化的症状了。
+也没什么好反思的，感觉能健全地活下来已经很不容易了。
 
-## Major Achievements
+下半年。
+假期没别的事。我过得有点窝囊，基本没做成什么事也没怎么旅游就滚去nus上学了。我记得我走的时候很难过，我一直在哭，去机场那天早上我在听beyond的《再见理想》。我的理想到底是什么，我也不知道。我越来越觉得我根本没有出人头地的欲望。
 
-### Technical Development
+后来去了海口看kanye。老实说，回来之后还是觉得和电脑上看的没什么区别，只是那场旅程还蛮有意思。
 
-- Established LEXI ARCHIVE as a permanent knowledge base
-- Implemented robust content management system using Next.js and Markdown
-- Developed Soviet-inspired design language that balances aesthetics with functionality
+在nus的日子，最开始我学得蛮有激情的。一切都还不错。虽然我天天都累但是也没累到不能承受，会花不少时间自己chill。买了吉他。和朋友聊一些让人精神愉悦的天。现在想到那些日子都感觉有点淡淡的怀旧意味，已经开始舍不得了。
 
-### Personal Growth
-
-1. **Learning**: Deepened understanding of modern web technologies
-2. **Creation**: Built systems that prioritize content preservation
-3. **Reflection**: Maintained consistent documentation practice
-
-## Challenges & Solutions
-
-### Challenge: Information Overload
-
-**Problem**: Too much scattered information across multiple platforms
-
-**Solution**: Centralized archive with clear categorization (Fragments vs Records)
-
-### Challenge: Design Direction
-
-**Problem**: Finding a distinctive visual identity
-
-**Solution**: Adopted constructivist principles with modern implementation
-
-## Key Learnings
-
-> "The value of a system lies not in its complexity, but in its sustainability."
-
-- **Simplicity wins**: Markdown + Git > complex CMS
-- **Ownership matters**: Self-hosted > platform dependency
-- **Design principle**: Form follows function, but aesthetics enhance understanding
-
-## Statistics
-
-- **Fragments published**: Multiple
-- **Records completed**: This is the first
-- **Technical experiments**: Numerous
-- **Lessons learned**: Countless
-
-## Looking Forward to 2025
-
-### Goals
-
-1. Expand archive content consistently
-2. Implement remaining features (Guestbook, Dialogues)
-3. Refine RAG system for enhanced knowledge retrieval
-4. Maintain the discipline of regular documentation
-
-### Technical Roadmap
-
-- [ ] Complete all core sections
-- [ ] Integrate AI conversation interface
-- [ ] Optimize for performance
-- [ ] Explore decentralization options
-
-## Conclusion
-
-2024 provided the foundation. The archive now exists, the system works, and the path forward is clear.
-
-The work continues.
-
----
-
-**Status**: Official Record  
-**Category**: Annual Review  
-**Next Review**: December 31, 2025
+对很多事情还很懵，我还没完全figure out该怎么走接下来的路。还挺喜欢nus的，尽管人文土壤基本没有，好歹nus没管过我的生活方式，一切都还算自由。
+（有了group project之后就该我恨nus了）

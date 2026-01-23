@@ -1,0 +1,271 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  min-height: 100vh;
+}
+
+.backButton {
+  display: inline-block;
+  font-size: 18px;
+  color: #1A1A1A;
+  margin-bottom: 40px;
+  transition: transform 0.2s;
+  letter-spacing: 2px;
+}
+
+.backButton:hover {
+  transform: translateX(-5px);
+}
+
+.title {
+  font-size: 80px;
+  color: #1A1A1A;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  transform: skewY(-2deg);
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #666;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+/* 表单卡片 */
+.formCard {
+  background: white;
+  border: 4px solid #1A1A1A;
+  border-left: 8px solid #CC0000;
+  padding: 40px;
+  margin-bottom: 60px;
+  box-shadow: 8px 8px 0px rgba(26, 26, 26, 0.2);
+}
+
+.formTitle {
+  font-size: 32px;
+  color: #1A1A1A;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 18px;
+  color: #1A1A1A;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.input,
+.textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-size: 16px;
+  padding: 15px;
+  border: 3px solid #1A1A1A;
+  background: #F9F9F9;
+  transition: all 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #CC0000;
+  background: white;
+  box-shadow: 4px 4px 0px rgba(204, 0, 0, 0.2);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  background: #CC0000;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 0px rgba(26, 26, 26, 0.3);
+  align-self: flex-start;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #1A1A1A;
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0px rgba(26, 26, 26, 0.4);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: translate(0, 0);
+  box-shadow: 3px 3px 0px rgba(26, 26, 26, 0.3);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  background: #d4edda;
+  border: 3px solid #28a745;
+  color: #155724;
+  padding: 15px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.errorMessage {
+  background: #f8d7da;
+  border: 3px solid #dc3545;
+  color: #721c24;
+  padding: 15px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* 留言列表区域 */
+.messagesSection {
+  margin-top: 80px;
+}
+
+.messagesTitle {
+  font-size: 48px;
+  color: #1A1A1A;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #CC0000;
+  padding-bottom: 15px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border: 3px solid #E8E4D8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #999;
+  font-size: 18px;
+}
+
+.messagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.messageCard {
+  background: white;
+  border: 3px solid #1A1A1A;
+  padding: 25px 30px;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 0px rgba(26, 26, 26, 0.15);
+}
+
+.messageCard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px rgba(26, 26, 26, 0.25);
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #E8E4D8;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.messageName {
+  font-size: 22px;
+  color: #CC0000;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.messageDate {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.messageContent {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .formCard {
+    padding: 25px 20px;
+  }
+
+  .formTitle {
+    font-size: 24px;
+  }
+
+  .submitButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .messagesTitle {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .messageCard {
+    padding: 20px;
+  }
+
+  .messageName {
+    font-size: 18px;
+  }
+
+  .messageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
