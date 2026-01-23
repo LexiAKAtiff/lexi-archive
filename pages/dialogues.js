@@ -7,7 +7,7 @@ export default function Dialogues() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: '你好！我是Lexi的赛博替身。你可以问我关于Lexi的任何问题——兴趣、想法、价值观等等。'
+      content: '你好！我是Lexi的赛博替身。你可以问我关于Lexi的任何问题——兴趣、想法、价值观等等。（目前只支持中文）'
     }
   ]);
   const [input, setInput] = useState('');
@@ -82,9 +82,9 @@ export default function Dialogues() {
   // 快捷问题
   const quickQuestions = [
     "你最喜欢的电影是什么？",
-    "你对AI有什么看法？",
+    "你如何面对失败？",
     "你为什么做这个网站？",
-    "用三个词描述你自己",
+    "你喜欢什么？",
   ];
 
   function handleQuickQuestion(question) {
@@ -104,7 +104,7 @@ export default function Dialogues() {
 
         <div className={styles.header}>
           <h1 className={styles.title}>DIALOGUES</h1>
-          <p className={styles.subtitle}>Chat with Lexi's Cyber Avatar</p>
+          <p className={styles.subtitle}>Chat with Lexi&apos;s Cyber Avatar</p>
         </div>
 
         {/* 对话区域 */}
