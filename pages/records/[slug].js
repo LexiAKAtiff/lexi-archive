@@ -39,7 +39,7 @@ export default function Record({ postData }) {
         </article>
 
         <div className={styles.backToIndex}>
-          <Link href="/">← BACK TO RECORDS</Link>
+          <Link href="/records">← BACK TO RECORDS</Link>
         </div>
       </div>
     </>

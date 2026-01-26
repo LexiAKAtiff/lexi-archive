@@ -37,7 +37,7 @@ export default function Post({ postData }) {
         </article>
 
         <div className={styles.backToIndex}>
-          <Link href="/">← BACK TO FRAGMENTS</Link>
+          <Link href="/fragments">← BACK TO FRAGMENTS</Link>
         </div>
       </div>
     </>
