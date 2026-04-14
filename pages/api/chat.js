@@ -34,6 +34,7 @@ export default async function handler(req, res) {
       dimensions: 1024,
     });
     const queryEmbedding = embeddingResponse.data[0].embedding;
+    console.log('Embedding 维度:', queryEmbedding.length);
 
     // 2. 同时搜索问答和微博（使用 qwen embedding 表）
     const [qaResults, weiboResults] = await Promise.all([
@@ -52,29 +53,33 @@ export default async function handler(req, res) {
     const weiboMatches = weiboResults.data || [];
 
     // ========== 调试：打印RAG检索结果 ==========
-    // console.log('\n========== RAG 调试信息 ==========');
-    // console.log('用户问题:', message);
-    // console.log('\n--- QA匹配结果 ---');
-    // if (qaMatches.length > 0) {
-    //   qaMatches.forEach((m, i) => {
-    //     console.log(`[QA ${i + 1}] 相似度: ${m.similarity?.toFixed(4)}`);
-    //     console.log(`  问: ${m.question}`);
-    //     console.log(`  答: ${m.answer}`);
-    //   });
-    // } else {
-    //   console.log('无QA匹配');
-    // }
-    // console.log('\n--- 微博匹配结果 ---');
-    // if (weiboMatches.length > 0) {
-    //   weiboMatches.forEach((w, i) => {
-    //     const date = w.created_at ? new Date(w.created_at).toLocaleDateString('zh-CN') : '未知日期';
-    //     console.log(`[微博 ${i + 1}] 相似度: ${w.similarity?.toFixed(4)} | 日期: ${date}`);
-    //     console.log(`  内容: ${w.content}`);
-    //   });
-    // } else {
-    //   console.log('无微博匹配');
-    // }
-    // console.log('===================================\n');
+    console.log('\n========== RAG 调试信息 ==========');
+    console.log('用户问题:', message);
+    console.log('\n--- QA匹配结果 ---');
+    if (qaMatches.length > 0) {
+      qaMatches.forEach((m, i) => {
+        console.log(`[QA ${i + 1}] 相似度: ${m.similarity?.toFixed(4)}`);
+        console.log(`  问: ${m.question}`);
+        console.log(`  答: ${m.answer}`);
+      });
+    } else {
+      console.log('无QA匹配');
+    }
+    console.log('\n--- 微博匹配结果 ---');
+    if (weiboMatches.length > 0) {
+      weiboMatches.forEach((w, i) => {
+        const date = w.created_at ? new Date(w.created_at).toLocaleDateString('zh-CN') : '未知日期';
+        console.log(`[微博 ${i + 1}] 相似度: ${w.similarity?.toFixed(4)} | 日期: ${date}`);
+        console.log(`  内容: ${w.content}`);
+      });
+    } else {
+      console.log('无微博匹配');
+    }
+    console.log('qaResults.error:', qaResults.error);
+    console.log('weiboResults.error:', weiboResults.error);
+    console.log('qaResults raw data:', JSON.stringify(qaResults.data));
+    console.log('weiboResults raw data:', JSON.stringify(weiboResults.data));
+    console.log('===================================\n');
 
     // 3. 构建上下文
     let context = '';

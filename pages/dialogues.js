@@ -82,7 +82,7 @@ export default function Dialogues() {
   // 快捷问题
   const quickQuestions = [
     "你最喜欢的电影是什么？",
-    "你如何面对失败？",
+    "你在想什么？ ",
     "你为什么做这个网站？",
     "你喜欢什么？",
   ];
